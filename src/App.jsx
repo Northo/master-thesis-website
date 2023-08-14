@@ -49,7 +49,7 @@ function App() {
             Anomalous Thermoelectric Effect in Tilted Dirac and Weyl Semimetals
           </h3>
         </div>
-        <Section image="/space.jpg">
+        <Section image="./space.jpg">
           <SectionTitle
             title="Energy is linear"
             subtitle="Introduction to high energy physics"
@@ -76,7 +76,7 @@ function App() {
             <img src="/dispersion.svg" />
           </div>
         </Section>
-        <Section image="/scale.jpg" isReverse>
+        <Section image="./scale.jpg" isReverse>
           <SectionTitle title="Anomalies" subtitle="Breaking the symmetry" />
 
           {/* Quote box */}
@@ -125,7 +125,7 @@ function App() {
           </div>
         </div>
 
-        <Section image="/cones-types.png" objectContain>
+        <Section image="./cones-types.png" objectContain>
           <SectionTitle
             title="Weyl Semimetals"
             subtitle="Relativistic particles at slow speeds"
@@ -145,7 +145,7 @@ function App() {
           in high energy.
         </Section>
 
-        <Section isReverse image="/luttinger.png">
+        <Section isReverse image="./luttinger.png">
           <SectionTitle
             title="Luttinger's trick"
             subtitle="Trading temperature for gravity"
@@ -216,7 +216,7 @@ function App() {
           </div>
         </div>
 
-        <Section image="/cones-tilt.png">
+        <Section image="./cones-tilt.png">
           <SectionTitle
             title="Breaking the isotropy"
             subtitle="Tilting the cone"
@@ -238,7 +238,7 @@ function App() {
           </div>
         </Section>
 
-        <Section image="/master.png">
+        <Section image="./master.png">
           <SectionTitle
             title="In detail"
             subtitle="For those who'd like the details"
