@@ -1,6 +1,14 @@
 import { MathJax, MathJaxContext } from "better-react-mathjax";
 import "./App.css";
 
+import SpaceUrl from "./assets/space.jpg"
+import ScaleUrl from "./assets/scale.jpg"
+import ConesTiltUrl from "./assets/cones-tilt.png"
+import ConesTypesUrl from "./assets/cones-types.png"
+import LuttingerUrl from "./assets/luttinger.png"
+import MasterUrl from "./assets/master.png"
+import DispersionUrl from "./assets/dispersion.svg"
+
 const Section = ({ image, objectContain, isReverse, children }) => (
   <div
     className={`flex flex-col shadow-lg ${
@@ -49,7 +57,7 @@ function App() {
             Anomalous Thermoelectric Effect in Tilted Dirac and Weyl Semimetals
           </h3>
         </div>
-        <Section image="./space.jpg">
+        <Section image={SpaceUrl}>
           <SectionTitle
             title="Energy is linear"
             subtitle="Introduction to high energy physics"
@@ -73,10 +81,10 @@ function App() {
               {"\\(E_k \\approx p.  \\)"}
             </MathJax>
 
-            <img src="/dispersion.svg" />
+            <img src={DispersionUrl} />
           </div>
         </Section>
-        <Section image="./scale.jpg" isReverse>
+        <Section image={ScaleUrl} isReverse>
           <SectionTitle title="Anomalies" subtitle="Breaking the symmetry" />
 
           {/* Quote box */}
@@ -120,12 +128,12 @@ function App() {
               physics?
             </h2>
             <div>
-              <img src="/cones-types.png" />
+              <img src={ConesTypesUrl} />
             </div>
           </div>
         </div>
 
-        <Section image="./cones-types.png" objectContain>
+        <Section image={ConesTypesUrl} objectContain>
           <SectionTitle
             title="Weyl Semimetals"
             subtitle="Relativistic particles at slow speeds"
@@ -145,7 +153,7 @@ function App() {
           in high energy.
         </Section>
 
-        <Section isReverse image="./luttinger.png">
+        <Section isReverse image={LuttingerUrl}>
           <SectionTitle
             title="Luttinger's trick"
             subtitle="Trading temperature for gravity"
@@ -216,7 +224,7 @@ function App() {
           </div>
         </div>
 
-        <Section image="./cones-tilt.png">
+        <Section image={ConesTiltUrl}>
           <SectionTitle
             title="Breaking the isotropy"
             subtitle="Tilting the cone"
@@ -238,7 +246,7 @@ function App() {
           </div>
         </Section>
 
-        <Section image="./master.png">
+        <Section image={MasterUrl}>
           <SectionTitle
             title="In detail"
             subtitle="For those who'd like the details"
